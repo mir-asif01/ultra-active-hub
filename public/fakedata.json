@@ -1,0 +1,32 @@
+[
+    {
+        "img" : "https://www.topendsports.com/testing/images/push-up-exercise.gif",
+        "name" : "pushUp",
+        "time" : 25
+    },
+    {
+        "img" : "https://image.shutterstock.com/image-vector/fit-woman-working-on-abdominal-260nw-1795870165.jpg",
+        "name" : "plunk",
+        "time" : 20
+    },
+    {
+        "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1V3zy7p_juOCP0CPvQmeJ4SVEDfVHDaSA4A&usqp=CAU",
+        "name" : "jumpingJack",
+        "time" : 35
+    },
+    {
+        "img" : "https://www.topendsports.com/fitness/images/sit-up-image.gif",
+        "name" : "bentKneeSit",
+        "time" : 30
+    },
+    {
+        "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZdQvzMKV9i18JbbbFO-9VI9s0RxvfzJ4_Q&usqp=CAU",
+        "name" : "running",
+        "time" : 50
+    },
+    {
+        "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XO3WukiGXcpCe73uUOWvkwDDGJnJr8LjDw&usqp=CAU",
+        "name" : "ropeJumping",
+        "time" : 15
+    }
+]
