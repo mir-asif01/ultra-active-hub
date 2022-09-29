@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './List.css'
 
-const List = () => {
+const List = ({time,setTime}) => {
+
+    
+    const [breakTimes,setBreakTimes] = useState(0)
+    useEffect(()=>{
+        fetch('breakTime.json')
+        .then(res => res.json())
+        .then(data => setBreakTimes(data))
+    },[])
+   
     return (
         <div className='list'>
             <div className="profile-section">
@@ -32,18 +41,17 @@ const List = () => {
             <div className="add-break-section">                
                 <h3>Add A Break</h3>
                 <div className="times">
-                    <div className='time'><button>10s</button></div>
-                    <div className='time'><button>20s</button></div>
-                    <div className='time'><button>30s</button></div>
-                    <div className='time'><button>40s</button></div>
-                    <div className='time'><button>50s</button></div>
+                    {/* {
+                        breakTimes.map(t=>console.log(t.time))
+                    } */}
+                    
                 </div>
             </div>
             <div className="detail-section">
                 <h3>Execise Details</h3>
                 <div className="exercise-time">
                     <div><p>Exercise Time</p></div>
-                    <div><p>{0}s</p></div>
+                    <div><p>{time}s</p></div>
                 </div>
                 <div className="break-time">
                     <div><p>Break Time</p></div>
