@@ -8,29 +8,23 @@ function App() {
   const [time,setTime] = useState(0)
   let prevTime = time
   const handleAddToList = (time) =>{
-    if(time){
       let newTime = time + prevTime;
-      console.log(newTime)
-      localStorage.setItem('exerciseTime',JSON.stringify(newTime))
+      localStorage.setItem('exerciseTime',JSON.stringify(newTime));
+      console.log(localStorage.getItem('exerciseTime'))
 
-      let exerciseTimeFromLS = localStorage.getItem("exerciseTime");
-      if(exerciseTimeFromLS){
-        setTime(JSON.parse(exerciseTimeFromLS));
-        return;
+      // setTime(newTime)
+      let oldTimeFromLS = JSON.parse(localStorage.getItem('exerciseTime'));
+      if(oldTimeFromLS){
+        // let newTime = time + prevTime;
+        console.log(oldTimeFromLS)
+        setTime(oldTimeFromLS)
       }
       else{
-        setTime(newTime);
-        return;
-        }
-      // console.log(exerciseTimeFromLS)
-     
-      // if(exerciseTime){
-      //   console.log('hi ls')
-      // }
-      // setTime(exerciseTime)
+        console.log(newTime)
+        setTime(newTime)
+      }
     }
-    
-  }
+    console.log(time)
   return (
     <div className='App'>
       <div className="left-section">

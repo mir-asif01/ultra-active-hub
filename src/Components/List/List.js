@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react';
 import './List.css'
 
 const List = ({time,setTime,id}) => {
-
-    
     const [breakTimes,setBreakTimes] = useState([])
+    const [breakTime,setBreakTime] = useState(0)
     useEffect(()=>{
         fetch('breakTime.json')
         .then(res => res.json())
         .then(data => setBreakTimes(data))
     },[])
    
+    const handleBreakTime = (breakTime) =>{
+        setBreakTime(breakTime)
+    }
+
     return (
         <div className='list'>
             <div className="profile-section">
@@ -42,7 +45,7 @@ const List = ({time,setTime,id}) => {
                 <h3>Add A Break</h3>
                 <div className="times">
                     {
-                        breakTimes.map(t=><div><button>{t.time}s</button></div>)
+                        breakTimes.map(t=><div><button onClick={()=>handleBreakTime(t.time)}>{t.time}s</button></div>)
                     }
                     
                 </div>
@@ -55,7 +58,7 @@ const List = ({time,setTime,id}) => {
                 </div>
                 <div className="break-time">
                     <div><p>Break Time</p></div>
-                    <div><p>{0}s</p></div>
+                    <div><p>{breakTime}s</p></div>
                 </div>
             </div>
             <button className='ac-comp'>Activity Completed</button>
