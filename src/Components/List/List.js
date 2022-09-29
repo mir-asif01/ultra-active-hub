@@ -60,11 +60,11 @@ const List = ({time,setTime,id,notify}) => {
                 <h3>Execise Details</h3>
                 <div className="exercise-time">
                     <div><p>Exercise Time</p></div>
-                    <div><p>{time}s</p></div>
+                    <div><p>{time} seconds</p></div>
                 </div>
                 <div className="break-time">
                     <div><p>Break Time</p></div>
-                    <div><p>{breakTime}s</p></div>
+                    <div><p>{breakTime} seconds</p></div>
                 </div>
             </div>
             <button className='ac-comp' onClick={notify}>Activity Completed</button>

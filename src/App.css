@@ -1,10 +1,12 @@
-.App {
+.App{
   padding: 10px;
+}
+.main{
   display: grid;
   grid-template-columns: 2fr 2fr;
 }
 @media screen and (max-width:540px) {
-  .App{
+  .main{
      display: flex;
      flex-direction: column;
      justify-content: center;

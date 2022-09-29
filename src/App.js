@@ -5,9 +5,10 @@ import Header from './Components/Header/Header';
 import List from './Components/List/List';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Questions from './Components/Questions/Questions';
 
 function App() {
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast("React is awesome and this toast too...");
   const [time, setTime] = useState(0)
   let prevTime = time
   const handleAddToList = (time) => {
@@ -22,6 +23,7 @@ function App() {
   }, [time])
   return (
     <div className='App'>
+      <div className="main">
       <div className="left-section">
         <Header></Header>
         <h3>Exeecises For Today</h3>
@@ -33,6 +35,8 @@ function App() {
           <ToastContainer />
         </div>
       </div>
+      </div>
+      <Questions></Questions>
     </div>
   );
 }
