@@ -11,8 +11,14 @@ const List = ({time,setTime,id}) => {
     },[])
    
     const handleBreakTime = (breakTime) =>{
+        localStorage.setItem('b-time',JSON.stringify(breakTime))
         setBreakTime(breakTime)
     }
+
+    useEffect(()=>{
+        let btfls = JSON.parse(localStorage.getItem("b-time"));
+        setBreakTime(btfls)
+    })
 
     return (
         <div className='list'>

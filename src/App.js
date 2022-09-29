@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Exercises from './Components/Exercises/Exercises';
 import Header from './Components/Header/Header';
@@ -10,21 +10,13 @@ function App() {
   const handleAddToList = (time) =>{
       let newTime = time + prevTime;
       localStorage.setItem('exerciseTime',JSON.stringify(newTime));
-      console.log(localStorage.getItem('exerciseTime'))
-
-      // setTime(newTime)
-      let oldTimeFromLS = JSON.parse(localStorage.getItem('exerciseTime'));
-      if(oldTimeFromLS){
-        // let newTime = time + prevTime;
-        console.log(oldTimeFromLS)
-        setTime(oldTimeFromLS)
-      }
-      else{
-        console.log(newTime)
-        setTime(newTime)
-      }
+      setTime(newTime)
     }
-    console.log(time)
+
+    useEffect(()=>{
+      let etfls = JSON.parse(localStorage.getItem('exerciseTime'))
+      setTime(etfls)
+    })
   return (
     <div className='App'>
       <div className="left-section">
