@@ -1,6 +1,7 @@
 .list{
-    border: 1px solid red;
     padding: 10px;
+    text-align: center;
+    background-color: lightyellow;
 }
 .name-img{
     display: flex;
@@ -41,4 +42,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.ac-comp{
+    background-color: lightskyblue;
+    border: none;
+    padding: 8px 15px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
 }

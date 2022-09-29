@@ -8,6 +8,7 @@ function App() {
     <div className='App'>
       <div className="left-section">
         <Header></Header>
+        <h3>Exeecises For Today</h3>
         <Exercises></Exercises>
       </div>
       <div className="right-section">

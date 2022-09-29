@@ -50,6 +50,7 @@ const List = () => {
                     <div><p>{0}s</p></div>
                 </div>
             </div>
+            <button className='ac-comp'>Activity Completed</button>
         </div>
     );
 };
