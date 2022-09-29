@@ -12,7 +12,7 @@ const Exercises = ({handleAddToList}) => {
     return (
         <div className='main-container'>
             {
-                exercises.map(exercise=> <Card exercise={exercise} handleAddToList={handleAddToList}></Card>)
+                exercises.map(exercise=> <Card exercise={exercise} handleAddToList={handleAddToList} key={exercise.id}></Card>)
             }
         </div>
     );

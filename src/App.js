@@ -10,11 +10,26 @@ function App() {
   const handleAddToList = (time) =>{
     if(time){
       let newTime = time + prevTime;
-      setTime(newTime)
+      console.log(newTime)
+      localStorage.setItem('exerciseTime',JSON.stringify(newTime))
+
+      let exerciseTimeFromLS = localStorage.getItem("exerciseTime");
+      if(exerciseTimeFromLS){
+        setTime(JSON.parse(exerciseTimeFromLS));
+        return;
+      }
+      else{
+        setTime(newTime);
+        return;
+        }
+      // console.log(exerciseTimeFromLS)
+     
+      // if(exerciseTime){
+      //   console.log('hi ls')
+      // }
+      // setTime(exerciseTime)
     }
-    else{
-    setTime(time)
-    }
+    
   }
   return (
     <div className='App'>

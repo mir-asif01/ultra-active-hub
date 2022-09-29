@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './List.css'
 
-const List = ({time,setTime}) => {
+const List = ({time,setTime,id}) => {
 
     
-    const [breakTimes,setBreakTimes] = useState(0)
+    const [breakTimes,setBreakTimes] = useState([])
     useEffect(()=>{
         fetch('breakTime.json')
         .then(res => res.json())
@@ -41,9 +41,9 @@ const List = ({time,setTime}) => {
             <div className="add-break-section">                
                 <h3>Add A Break</h3>
                 <div className="times">
-                    {/* {
-                        breakTimes.map(t=>console.log(t.time))
-                    } */}
+                    {
+                        breakTimes.map(t=><div><button>{t.time}s</button></div>)
+                    }
                     
                 </div>
             </div>
