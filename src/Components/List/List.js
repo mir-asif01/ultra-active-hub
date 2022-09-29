@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './List.css'
 
-const List = ({time,setTime,id}) => {
+const List = ({time,setTime,id,notify}) => {
     const [breakTimes,setBreakTimes] = useState([])
     const [breakTime,setBreakTime] = useState(0)
     useEffect(()=>{
@@ -67,7 +67,7 @@ const List = ({time,setTime,id}) => {
                     <div><p>{breakTime}s</p></div>
                 </div>
             </div>
-            <button className='ac-comp'>Activity Completed</button>
+            <button className='ac-comp' onClick={notify}>Activity Completed</button>
         </div>
     );
 };
