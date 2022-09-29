@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo{
+    margin-right: 10px;
+}
+.name h2{
+    color: lightseagreen;
+}

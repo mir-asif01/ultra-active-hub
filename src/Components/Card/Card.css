@@ -1,0 +1,27 @@
+.card{
+    width: 160px;
+    height: 210px;
+    margin: 3px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.card img{
+    width: 100%;
+    height: 80px;
+}
+.card .add-btn{
+    width: 100%;
+    border: none;
+    background-color: lightgreen;
+    font-weight: bolder;
+    font-size: 10px;
+    padding: 10px 10px;
+    color: gray;
+    cursor: pointer;
+}
+@media screen and (max-width:540px) {
+    .card{
+        width: 100%;
+        height: 300px;
+    }
+  }

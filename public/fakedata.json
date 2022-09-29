@@ -1,32 +1,32 @@
 [
     {
         "img" : "https://www.topendsports.com/testing/images/push-up-exercise.gif",
-        "name" : "pushUp",
+        "name" : "Push Up",
         "time" : 25
     },
     {
         "img" : "https://image.shutterstock.com/image-vector/fit-woman-working-on-abdominal-260nw-1795870165.jpg",
-        "name" : "plunk",
+        "name" : "Plunk",
         "time" : 20
     },
     {
         "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1V3zy7p_juOCP0CPvQmeJ4SVEDfVHDaSA4A&usqp=CAU",
-        "name" : "jumpingJack",
+        "name" : "Jumping Jack",
         "time" : 35
     },
     {
-        "img" : "https://www.topendsports.com/fitness/images/sit-up-image.gif",
-        "name" : "bentKneeSit",
+        "img" : "https://www.wikihow.com/images/thumb/5/53/Do-Knee-Crunches-Step-2.jpg/v4-460px-Do-Knee-Crunches-Step-2.jpg.webp",
+        "name" : "Bent Knee Sit",
         "time" : 30
     },
     {
         "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZdQvzMKV9i18JbbbFO-9VI9s0RxvfzJ4_Q&usqp=CAU",
-        "name" : "running",
+        "name" : "Running",
         "time" : 50
     },
     {
         "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XO3WukiGXcpCe73uUOWvkwDDGJnJr8LjDw&usqp=CAU",
-        "name" : "ropeJumping",
+        "name" : "Rope Jumping",
         "time" : 15
     }
 ]
