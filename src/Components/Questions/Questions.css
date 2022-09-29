@@ -1,4 +1,7 @@
 .Questions{
-    border-left: 3px solid lightpink;
     padding-left: 5px;
+}
+.question{
+    border-left: 3px solid lightpink;
+    margin-bottom: 7px;
 }
